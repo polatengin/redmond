@@ -5,3 +5,4 @@ In _redmond-{commandName}_ repositories I build the _{commandName}_ from scratch
 ## Repositories
 
 - [echo command](https://github.com/polatengin/redmond-echo)
+- [cd command](https://github.com/polatengin/redmond-cd)
