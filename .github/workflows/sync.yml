@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download release
-        run: curl -sL -o release.tar.gz "${{ inputs.release_url }}"
+        run: curl -sL -o release.tar.gz "https://github.com/polatengin/redmond-srm/archive/refs/tags/${{ inputs.release_tag }}.tar.gz"
 
       - name: Extract and display content
         run: |
