@@ -19,4 +19,4 @@ jobs:
         run: |
           mkdir release
           tar -xzf release.tar.gz -C release
-          ls -lah release
+          ls -lahR release
