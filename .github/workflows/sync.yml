@@ -1,0 +1,22 @@
+name: Sync
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        required: true
+      release_url:
+        required: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download release
+        run: curl -sL -o release.tar.gz "${{ inputs.release_url }}"
+
+      - name: Extract and display content
+        run: |
+          mkdir release
+          tar -xzf release.tar.gz -C release
+          ls -lah release
